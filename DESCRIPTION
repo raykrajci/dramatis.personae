@@ -1,0 +1,16 @@
+Package: dramatis.personae
+Title: Generate Lists of Authors and Affiliations for Papers
+Version: 0.1.0
+Authors@R: 
+    person("Ray", "Krajci", , "email@email.email", role = c("aut", "cre"))
+Description: Generate lists of authors and affiliations for papers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    assertthat,
+    dplyr,
+    stringr,
+    tidyr,
+    yaml
