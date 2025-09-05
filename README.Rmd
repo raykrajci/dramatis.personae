@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# dramatis.personae
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This package generates a YAML file for gathering authors and their affiliations then uses that file to generate a list of authors and their affiliations for manuscripts.
+
+## Installation
+
+You can install the development version of dramatis.personae from [GitHub](https://github.com/) with:
+
+```r
+devtools::install_github("raykrajci/dramatis.personae")
+```
+
+## Example
+
+Generating the list of authors and their affiliations is a two step process:
+
+```{r}
+# Generate the YAML file.
+# Defaults to "dramatis.personae.yaml" in the working directory.
+
+dramatis.personae::initialize()
+
+# Generate the list of authors and affiliations from the YAML file.
+
+result <- dramatis.personae::generate()
+
+result$authors
+
+result$affiliations
+
+```
