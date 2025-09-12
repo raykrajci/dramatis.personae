@@ -48,3 +48,6 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 .Rproj.user
+
+# dramatis.personae.yaml files created in package directory
+dramatis.personae.yaml
